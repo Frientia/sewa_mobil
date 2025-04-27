@@ -125,12 +125,12 @@
                 <p style="font-size: 12px;">Property Manager</p>
             </div>
             <nav>
-                <a href="index.html" ><i class="fas fa-home"></i>Dashboard</a>
-                <a href="data_mobil.html"><i class="fas fa-car"></i>Data Mobil</a>
-                <a href="data_supir.html" class="active"><i class="fas fa-user-tie"></i>Data Supir</a>
-                <a href="data_pengguna.html" ><i class="fas fa-users"></i>Data Pengguna</a>
-                <a href="transaksi.html"><i class="fas fa-exchange-alt"></i>Transaksi</a>
-                <a href="laporan.html"><i class="fas fa-file-alt"></i>Laporan</a>
+                <a href="index.php" ><i class="fas fa-home"></i>Dashboard</a>
+                <a href="data_mobil.php"><i class="fas fa-car"></i>Data Mobil</a>
+                <a href="data_supir.php" class="active"><i class="fas fa-user-tie"></i>Data Supir</a>
+                <a href="data_pengguna.php" ><i class="fas fa-users"></i>Data Pengguna</a>
+                <a href="transaksi.php"><i class="fas fa-exchange-alt"></i>Transaksi</a>
+                <a href="laporan.php"><i class="fas fa-file-alt"></i>Laporan</a>
                 <a href="#"><i class="fas fa-cog"></i>Pengaturan</a>
             </nav>
         </div>
