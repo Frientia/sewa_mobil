@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Transaksi Sewa Mobil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .total {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #d9534f;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Transaksi Sewa Mobil</h2>
+        <form id="sewaForm">
+            <label for="nama">Nama Penyewa:</label>
+            <input type="text" id="nama" required>
+
+            <label for="mobil">Pilih Mobil:</label>
+            <select id="mobil">
+                <option value="500000">Toyota Avanza - Rp 500.000/hari</option>
+                <option value="700000">Honda CRV - Rp 700.000/hari</option>
+                <option value="900000">Mitsubishi Pajero - Rp 900.000/hari</option>
+            </select>
+
+            <label for="durasi">Durasi Sewa (hari):</label>
+            <input type="number" id="durasi" min="1" value="1">
+
+            <button type="button" onclick="hitungTotal()">Hitung Total</button>
+
+            <div class="total" id="totalBiaya">Total: Rp 0</div>
+        </form>
+    </div>
+
+    <script>
+        function hitungTotal() {
+            let hargaMobil = document.getElementById("mobil").value;
+            let durasi = document.getElementById("durasi").value;
+            let total = hargaMobil * durasi;
+            document.getElementById("totalBiaya").innerText = "Total: Rp " + total.toLocaleString();
+        }
+    </script>
+
+</body>
+</html>
